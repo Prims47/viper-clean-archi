@@ -18,15 +18,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WLu-cg-PYo">
-                                <rect key="frame" x="141" y="239" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SplahBG" translatesAutoresizingMaskIntoConstraints="NO" id="osQ-gm-d45">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="fuego" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="laY-BZ-Akm">
+                                <rect key="frame" x="120" y="303.5" width="135" height="60"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
+                                <color key="textColor" red="0.20784313730000001" green="0.23137254900000001" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="osQ-gm-d45" firstAttribute="top" secondItem="eP5-9W-cKf" secondAttribute="top" id="Cxn-v4-s2A"/>
+                            <constraint firstItem="hgs-tu-TLJ" firstAttribute="trailing" secondItem="osQ-gm-d45" secondAttribute="trailing" id="WjJ-vG-lT3"/>
+                            <constraint firstItem="osQ-gm-d45" firstAttribute="leading" secondItem="eP5-9W-cKf" secondAttribute="leading" id="dBM-fi-8BZ"/>
+                            <constraint firstAttribute="bottom" secondItem="osQ-gm-d45" secondAttribute="bottom" id="eWB-xf-6g4"/>
+                            <constraint firstItem="laY-BZ-Akm" firstAttribute="centerY" secondItem="eP5-9W-cKf" secondAttribute="centerY" id="mLT-sl-Cc7"/>
+                            <constraint firstItem="laY-BZ-Akm" firstAttribute="centerX" secondItem="eP5-9W-cKf" secondAttribute="centerX" id="mZW-hY-kzF"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="hgs-tu-TLJ"/>
                     </view>
                 </viewController>
@@ -34,4 +44,7 @@
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="SplahBG" width="414" height="896"/>
+    </resources>
 </document>

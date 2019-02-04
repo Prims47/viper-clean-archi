@@ -18,18 +18,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="accor_logo" translatesAutoresizingMaskIntoConstraints="NO" id="6vZ-jc-BCC">
-                                <rect key="frame" x="65.5" y="244" width="244" height="179"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="244" id="nuj-eg-m3z"/>
-                                    <constraint firstAttribute="width" secondItem="6vZ-jc-BCC" secondAttribute="height" multiplier="244:179" id="wUY-3q-keV"/>
-                                </constraints>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SplahBG" translatesAutoresizingMaskIntoConstraints="NO" id="dIn-7r-YJo">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="fuego" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1gb-km-3SH">
+                                <rect key="frame" x="120" y="303.5" width="135" height="60"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
+                                <color key="textColor" red="0.20784313725490194" green="0.23137254901960785" blue="0.31372549019607843" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="6vZ-jc-BCC" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="mfP-18-kyJ"/>
-                            <constraint firstItem="6vZ-jc-BCC" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="nxT-sT-XqF"/>
+                            <constraint firstItem="dIn-7r-YJo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="O19-FT-zLy"/>
+                            <constraint firstItem="1gb-km-3SH" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="V6R-Lc-Yka"/>
+                            <constraint firstAttribute="bottom" secondItem="dIn-7r-YJo" secondAttribute="bottom" id="mNE-SO-fSV"/>
+                            <constraint firstItem="1gb-km-3SH" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="qhu-Np-EGD"/>
+                            <constraint firstItem="dIn-7r-YJo" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="sLk-f8-muB"/>
+                            <constraint firstAttribute="trailing" secondItem="dIn-7r-YJo" secondAttribute="trailing" id="zJU-za-GwQ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -40,6 +46,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="accor_logo" width="842" height="595"/>
+        <image name="SplahBG" width="414" height="896"/>
     </resources>
 </document>

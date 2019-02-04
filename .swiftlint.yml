@@ -1,3 +1,4 @@
+line_length: 150
 excluded: 
   - Pods
   - meetupiOSFevTests

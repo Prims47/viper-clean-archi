@@ -9,3 +9,8 @@ ib:
   outputs:
     - templateName: scenes-swift4
       output: viperCleanArchi/Sources/Generated/SwiftGen/Storyboard Scenes.swift
+colors:
+  inputs: viperCleanArchi/Resources/Colors.json
+  outputs:
+    templateName: swift4
+    output: viperCleanArchi/Sources/Generated/SwiftGen/Colors.swift
