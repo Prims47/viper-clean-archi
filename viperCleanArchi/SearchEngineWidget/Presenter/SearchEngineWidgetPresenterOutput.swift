@@ -9,6 +9,6 @@
 import Foundation
 
 /// sourcery: AutoMockable
-protocol SearchEnginePresenterOutput {
+protocol SearchEngineWidgetPresenterOutput: class {
 
 }

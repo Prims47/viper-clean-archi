@@ -17,10 +17,57 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bWg-NO-EMg">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qtf-5l-0wc">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="KYa-Mk-TVn">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cqp-oi-Gq3" userLabel="SearchEngineContainer">
+                                                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="KYa-Mk-TVn" firstAttribute="top" secondItem="qtf-5l-0wc" secondAttribute="top" id="7Au-ez-sHL"/>
+                                            <constraint firstAttribute="trailing" secondItem="KYa-Mk-TVn" secondAttribute="trailing" id="CEd-AU-K31"/>
+                                            <constraint firstAttribute="bottom" secondItem="KYa-Mk-TVn" secondAttribute="bottom" id="KCx-fe-FMg"/>
+                                            <constraint firstItem="KYa-Mk-TVn" firstAttribute="leading" secondItem="qtf-5l-0wc" secondAttribute="leading" id="miQ-p4-iM9"/>
+                                        </constraints>
+                                    </scrollView>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="qtf-5l-0wc" secondAttribute="trailing" id="BNs-Ul-csP"/>
+                                    <constraint firstItem="qtf-5l-0wc" firstAttribute="top" secondItem="bWg-NO-EMg" secondAttribute="top" id="FCz-Dh-2QL"/>
+                                    <constraint firstAttribute="bottom" secondItem="qtf-5l-0wc" secondAttribute="bottom" id="p1a-oV-zXh"/>
+                                    <constraint firstItem="qtf-5l-0wc" firstAttribute="leading" secondItem="bWg-NO-EMg" secondAttribute="leading" id="wXS-YE-DEc"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="bWg-NO-EMg" secondAttribute="trailing" id="K5g-7l-Kjl"/>
+                            <constraint firstItem="bWg-NO-EMg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="S5e-DY-Lvd"/>
+                            <constraint firstItem="KYa-Mk-TVn" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="Wwa-sr-cQV"/>
+                            <constraint firstAttribute="bottom" secondItem="bWg-NO-EMg" secondAttribute="bottom" id="ajo-5d-8Qh"/>
+                            <constraint firstItem="bWg-NO-EMg" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="jKD-2B-DIX"/>
+                            <constraint firstItem="qtf-5l-0wc" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="jc4-EJ-beY"/>
+                            <constraint firstItem="KYa-Mk-TVn" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="tRD-y7-axL"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="zXS-oN-2fj"/>
+                    <connections>
+                        <outlet property="searchEngineWidgetViewContainer" destination="Cqp-oi-Gq3" id="06i-Zg-9tj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

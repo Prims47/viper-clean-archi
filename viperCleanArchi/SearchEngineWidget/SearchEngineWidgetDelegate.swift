@@ -1,5 +1,5 @@
 //
-//  SearchEnginePresenterInput.swift
+//  SearchEngineWidgetDelegate.swift
 //  viperCleanArchi
 //
 //  Created by Ilan Z on 04/02/2019.
@@ -8,7 +8,6 @@
 
 import Foundation
 
-/// sourcery: AutoMockable
-protocol SearchEnginePresenterInput {
-    
+protocol SearchEngineWidgetDelegate: class {
+    func searchEngineWidgetDidSelectDestination()
 }

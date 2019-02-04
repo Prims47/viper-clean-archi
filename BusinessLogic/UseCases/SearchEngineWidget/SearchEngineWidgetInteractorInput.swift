@@ -9,6 +9,6 @@
 import Foundation
 
 /// sourcery: AutoMockable
-public protocol SearchEngineInteractorInput: class {
-    var output: SearchEngineInteractorOutput? { get set }
+public protocol SearchEngineWidgetInteractorInput: class {
+    var output: SearchEngineWidgetInteractorOutput? { get set }
 }

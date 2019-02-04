@@ -17,8 +17,8 @@ class SplashScreenRouter {
 
 extension SplashScreenRouter: SplashScreenRouterInput {
     func routeToHome() {
-        let storyboard = UIStoryboard(name: "Home", bundle: nil)
-        guard let homeViewController = storyboard.instantiateInitialViewController() as? HomeViewController else { return }
+        let homeViewController = StoryboardScene.Home.initialScene.instantiate()
+        homeViewController.searchEngineWidgetModuleFactory = SearchEngineWidgetModuleFactory()
 
         let moduleFactory = HomeModuleFactory()
         let interactor = moduleFactory.interactor()

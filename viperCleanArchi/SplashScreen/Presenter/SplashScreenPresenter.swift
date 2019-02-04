@@ -18,6 +18,7 @@ class SplashScreenPresenter {
     private var router: SplashScreenRouterInput
 
     // MARK: - Lifecycle
+    
     init(interactor: SplashScreenInteractorInput, router: SplashScreenRouterInput) {
         self.interactor = interactor
         self.router = router
