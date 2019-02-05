@@ -36,7 +36,6 @@ class HomeViewController: UIViewController {
 
     private func setupUI() {
         self.navigationController?.navigationBar.isHidden = true
-        self.view.backgroundColor = UIColor(named: .defaultBackground)
 
         self.setupModuleFactory()
     }
@@ -50,9 +49,9 @@ class HomeViewController: UIViewController {
         searchEngineWidgetViewContainer.addSubview(searchEngineWidgetView)
         searchEngineWidgetView.prepareForAutoLayout()
         NSLayoutConstraint.activate([
-            searchEngineWidgetView.pinToSuperview(\UIView.topAnchor),
-            searchEngineWidgetView.pinToSuperview(\UIView.leadingAnchor, constant: 16),
-            searchEngineWidgetView.pinToSuperview(\UIView.trailingAnchor, constant: -16),
+            searchEngineWidgetView.pinToSuperview(\UIView.topAnchor, constant: 20),
+            searchEngineWidgetView.pinToSuperview(\UIView.leadingAnchor, constant: 0),
+            searchEngineWidgetView.pinToSuperview(\UIView.trailingAnchor, constant: 0),
             searchEngineWidgetView.pinToSuperview(\UIView.bottomAnchor)
             ])
         searchEngineWidgetViewContainer.layoutIfNeeded()

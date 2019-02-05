@@ -42,6 +42,8 @@ target 'viperCleanArchi' do
   pod 'SwiftLint'
   pod 'SwiftGen'
 
+  # https://github.com/WenchaoD/FSCalendar
+
   target 'viperCleanArchiTests' do
     inherit! :search_paths
     # Pods for testing

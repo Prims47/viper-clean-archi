@@ -16,19 +16,6 @@ extension UIView {
         return self
     }
 
-    public func pinToOtherView<LayoutAnchorType, Axis>(_ other: UIView,
-                                                       from: KeyPath<UIView, LayoutAnchorType>,
-                                                       to: KeyPath<UIView, LayoutAnchorType>,
-                                                       constant: CGFloat = 0) -> NSLayoutConstraint
-        where LayoutAnchorType: NSLayoutAnchor<Axis> {
-            guard superview != nil
-                && ((other is UIWindow) || (other.superview != nil)) else { fatalError("must addSubview first") }
-
-            let source = self[keyPath: from]
-            let target = other[keyPath: to]
-            return source.constraint(equalTo: target, constant: constant)
-    }
-
     public func pinToSuperview<LayoutAnchorType, Axis>(_ from: KeyPath<UIView, LayoutAnchorType>,
                                                        to: KeyPath<UIView, LayoutAnchorType>,
                                                        constant: CGFloat = 0) -> NSLayoutConstraint

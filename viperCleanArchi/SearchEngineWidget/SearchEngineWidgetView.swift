@@ -9,11 +9,40 @@
 import UIKit
 
 class SearchEngineWidgetView: UIView, NibLoadable {
+    // MARK: - Constantsq
+
+    private enum Constants {
+        static let cornerRaduis: CGFloat = 5
+    }
+
+    // MARK: - Outlet
+
+    @IBOutlet private weak var searchEngineView: UIView!
+    @IBOutlet private weak var searchDestinationStackView: UIStackView!
+    @IBOutlet private weak var calendarView: UIView!
+    
     // MARK: - Property
 
     var presenter: SearchEngineWidgetPresenterInput!
 
     weak var delegate: SearchEngineWidgetDelegate?
+
+    // MARK: - Lifecycle
+
+    override func draw(_ rect: CGRect) {
+        super.draw(rect)
+        self.setupUI()
+        searchDestinationStackView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(didTapSearchDestinationButton)))
+    }
+
+    private func setupUI() {
+        self.searchEngineView.layer.cornerRadius = Constants.cornerRaduis
+        self.calendarView.layer.cornerRadius = Constants.cornerRaduis
+    }
+
+    @objc private func didTapSearchDestinationButton() {
+        delegate?.searchEngineWidgetDidSelectDestination()
+    }
 }
 
 // MARK: - SearchEngineWidgetPresenterOutput
