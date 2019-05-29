@@ -11,5 +11,6 @@ import UIKit
 protocol HotelViewModelProtocol {
     var id: String { get }
     var name: String  { get }
-    var image: UIImage  { get }
+    var image: UIImage?  { get }
+    var date: Date { get }
 }

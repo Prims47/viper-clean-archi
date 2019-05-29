@@ -10,4 +10,5 @@ import Foundation
 
 protocol SearchEngineWidgetDelegate: class {
     func searchEngineWidgetDidSelectDestination()
+    func searchEngineWidgetDidSelectCalendar()
 }

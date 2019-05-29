@@ -26,8 +26,12 @@
 		112FA59D21E2AF98003B76D2 /* HomeInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112FA59C21E2AF98003B76D2 /* HomeInteractorInput.swift */; };
 		112FA5A121E2BDBF003B76D2 /* Mocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112FA5A021E2BDBF003B76D2 /* Mocks.swift */; };
 		112FA5A321E2BE05003B76D2 /* Hotel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112FA5A221E2BE05003B76D2 /* Hotel.swift */; };
-		112FA5A621E2BECE003B76D2 /* HotelListInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112FA5A521E2BECE003B76D2 /* HotelListInteractorOutput.swift */; };
+		112FA5A621E2BECE003B76D2 /* HomeInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112FA5A521E2BECE003B76D2 /* HomeInteractorOutput.swift */; };
 		112FA5A821E2BF60003B76D2 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112FA5A721E2BF60003B76D2 /* HomeInteractor.swift */; };
+		113D3E0F229EACD400F3088C /* HotelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113D3E0E229EACD400F3088C /* HotelTests.swift */; };
+		1152DC1C229F016C00EC3E00 /* BookingRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1152DC1B229F016C00EC3E00 /* BookingRepositoryProtocol.swift */; };
+		1152DC20229F0A7500EC3E00 /* BookingDataProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1152DC1F229F0A7500EC3E00 /* BookingDataProxy.swift */; };
+		1152DC24229F1B6800EC3E00 /* HomeInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1152DC23229F1B6800EC3E00 /* HomeInteractorTests.swift */; };
 		116D95AE21F12474003589E0 /* HomeModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116D95AD21F12474003589E0 /* HomeModuleFactory.swift */; };
 		116D95B121F1285D003589E0 /* HomePresenterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116D95B021F1285D003589E0 /* HomePresenterInput.swift */; };
 		116D95B321F12870003589E0 /* HomePresenterOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116D95B221F12870003589E0 /* HomePresenterOutput.swift */; };
@@ -166,8 +170,12 @@
 		112FA59C21E2AF98003B76D2 /* HomeInteractorInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractorInput.swift; sourceTree = "<group>"; };
 		112FA5A021E2BDBF003B76D2 /* Mocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mocks.swift; sourceTree = "<group>"; };
 		112FA5A221E2BE05003B76D2 /* Hotel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hotel.swift; sourceTree = "<group>"; };
-		112FA5A521E2BECE003B76D2 /* HotelListInteractorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelListInteractorOutput.swift; sourceTree = "<group>"; };
+		112FA5A521E2BECE003B76D2 /* HomeInteractorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractorOutput.swift; sourceTree = "<group>"; };
 		112FA5A721E2BF60003B76D2 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		113D3E0E229EACD400F3088C /* HotelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelTests.swift; sourceTree = "<group>"; };
+		1152DC1B229F016C00EC3E00 /* BookingRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingRepositoryProtocol.swift; sourceTree = "<group>"; };
+		1152DC1F229F0A7500EC3E00 /* BookingDataProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingDataProxy.swift; sourceTree = "<group>"; };
+		1152DC23229F1B6800EC3E00 /* HomeInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractorTests.swift; sourceTree = "<group>"; };
 		116D95AD21F12474003589E0 /* HomeModuleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModuleFactory.swift; sourceTree = "<group>"; };
 		116D95B021F1285D003589E0 /* HomePresenterInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenterInput.swift; sourceTree = "<group>"; };
 		116D95B221F12870003589E0 /* HomePresenterOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenterOutput.swift; sourceTree = "<group>"; };
@@ -308,6 +316,7 @@
 		112FA52F21E299A8003B76D2 /* viperCleanArchi */ = {
 			isa = PBXGroup;
 			children = (
+				1152DC1D229F0A5A00EC3E00 /* DataProxy */,
 				112FA53021E299A8003B76D2 /* AppDelegate.swift */,
 				116D95AC21F1222F003589E0 /* Home */,
 				112FA53C21E299A8003B76D2 /* Info.plist */,
@@ -332,6 +341,7 @@
 		112FA55621E29A9C003B76D2 /* BusinessLogic */ = {
 			isa = PBXGroup;
 			children = (
+				1152DC19229F013B00EC3E00 /* Repositories */,
 				112FA59A21E2AF77003B76D2 /* UseCases */,
 				112FA59921E2AF66003B76D2 /* Entities */,
 				112FA55721E29A9C003B76D2 /* BusinessLogic.h */,
@@ -343,6 +353,8 @@
 		112FA56321E29A9C003B76D2 /* BusinessLogicTests */ = {
 			isa = PBXGroup;
 			children = (
+				1152DC21229F1B5500EC3E00 /* UseCases */,
+				113D3E0C229EAC8100F3088C /* Entities */,
 				112FA59F21E2BD9A003B76D2 /* Generated */,
 				112FA56421E29A9C003B76D2 /* BusinessLogicTests.swift */,
 				112FA56621E29A9C003B76D2 /* Info.plist */,
@@ -390,7 +402,7 @@
 			isa = PBXGroup;
 			children = (
 				112FA59C21E2AF98003B76D2 /* HomeInteractorInput.swift */,
-				112FA5A521E2BECE003B76D2 /* HotelListInteractorOutput.swift */,
+				112FA5A521E2BECE003B76D2 /* HomeInteractorOutput.swift */,
 				112FA5A721E2BF60003B76D2 /* HomeInteractor.swift */,
 				116D95AD21F12474003589E0 /* HomeModuleFactory.swift */,
 			);
@@ -411,6 +423,70 @@
 				112FA5A221E2BE05003B76D2 /* Hotel.swift */,
 			);
 			path = Hotel;
+			sourceTree = "<group>";
+		};
+		113D3E0C229EAC8100F3088C /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				113D3E0D229EACC100F3088C /* Home */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		113D3E0D229EACC100F3088C /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				113D3E0E229EACD400F3088C /* HotelTests.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		1152DC19229F013B00EC3E00 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				1152DC1A229F014200EC3E00 /* Booking */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		1152DC1A229F014200EC3E00 /* Booking */ = {
+			isa = PBXGroup;
+			children = (
+				1152DC1B229F016C00EC3E00 /* BookingRepositoryProtocol.swift */,
+			);
+			path = Booking;
+			sourceTree = "<group>";
+		};
+		1152DC1D229F0A5A00EC3E00 /* DataProxy */ = {
+			isa = PBXGroup;
+			children = (
+				1152DC1E229F0A6000EC3E00 /* Booking */,
+			);
+			path = DataProxy;
+			sourceTree = "<group>";
+		};
+		1152DC1E229F0A6000EC3E00 /* Booking */ = {
+			isa = PBXGroup;
+			children = (
+				1152DC1F229F0A7500EC3E00 /* BookingDataProxy.swift */,
+			);
+			path = Booking;
+			sourceTree = "<group>";
+		};
+		1152DC21229F1B5500EC3E00 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				1152DC22229F1B5C00EC3E00 /* Home */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		1152DC22229F1B5C00EC3E00 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				1152DC23229F1B6800EC3E00 /* HomeInteractorTests.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 		116D95AC21F1222F003589E0 /* Home */ = {
@@ -1139,6 +1215,7 @@
 				11921F5F2208F8CE0083780F /* SearchEngineWidgetDelegate.swift in Sources */,
 				116D95B321F12870003589E0 /* HomePresenterOutput.swift in Sources */,
 				116D95B521F1287E003589E0 /* HomePresenter.swift in Sources */,
+				1152DC20229F0A7500EC3E00 /* BookingDataProxy.swift in Sources */,
 				116D95D421F133B7003589E0 /* SplashScreenPresenterInput.swift in Sources */,
 				11921F5D2208EACA0083780F /* SearchEngineWidgetView.swift in Sources */,
 				11921F502208E6370083780F /* SearchEnginePresenter.swift in Sources */,
@@ -1166,9 +1243,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				116D95CA21F13266003589E0 /* SplashScreenInteractorInput.swift in Sources */,
+				1152DC1C229F016C00EC3E00 /* BookingRepositoryProtocol.swift in Sources */,
 				116D95D121F132AB003589E0 /* SplashScreenModuleFactory.swift in Sources */,
 				11921F552208E70F0083780F /* SearchEngineWidgetInteractorOutput.swift in Sources */,
-				112FA5A621E2BECE003B76D2 /* HotelListInteractorOutput.swift in Sources */,
+				112FA5A621E2BECE003B76D2 /* HomeInteractorOutput.swift in Sources */,
 				116D95AE21F12474003589E0 /* HomeModuleFactory.swift in Sources */,
 				112FA5A321E2BE05003B76D2 /* Hotel.swift in Sources */,
 				112FA59D21E2AF98003B76D2 /* HomeInteractorInput.swift in Sources */,
@@ -1186,7 +1264,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				112FA56521E29A9C003B76D2 /* BusinessLogicTests.swift in Sources */,
+				113D3E0F229EACD400F3088C /* HotelTests.swift in Sources */,
 				112FA5A121E2BDBF003B76D2 /* Mocks.swift in Sources */,
+				1152DC24229F1B6800EC3E00 /* HomeInteractorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -33,22 +33,26 @@ extension HomePresenter: HomePresenterInput {
 }
 
 extension HomePresenter: HomeInteractorOutput {
-    func didSuccessFetch(hotels: [Hotel]) {
-        output?.displayHotelList(hotels: hotels.compactMap {
-            guard let image = UIImage(named: $0.imageName) else {
-                return nil
-            }
+    func didSuccessFetchMyCurrentBooking(_ booking: HomeItemProtocol) {
+        self.output?.displayBooking(HotelViewModel(id: booking.id,
+                                                   name: booking.name,
+                                                   image: UIImage(named: booking.imageName),
+                                                   date: booking.date))
+    }
 
-            return HotelViewModel(id: $0.id, name: $0.name, image: image)
-        })
+    func notifyErrorCurrentBooking() {
+        self.output?.displayErrorFetch(with: "Yo ! You don't have a current booking")
     }
 
     func didFailedFetch() {
+        self.output?.displayErrorFetch(with: "Yo ! Something wrong !")
     }
 }
 
+// MARK: - HotelViewModelProtocol
 private struct HotelViewModel: HotelViewModelProtocol {
     var id: String
     var name: String
-    var image: UIImage
+    var image: UIImage?
+    var date: Date
 }

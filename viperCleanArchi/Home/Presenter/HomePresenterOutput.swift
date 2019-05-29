@@ -10,6 +10,6 @@ import Foundation
 
 /// sourcery: AutoMockable
 protocol HomePresenterOutput: class {
-    func displayHotelList(hotels: [HotelViewModelProtocol])
-    func displayErrorFetchHotelList(with message: String)
+    func displayBooking(_ booking: HotelViewModelProtocol)
+    func displayErrorFetch(with message: String)
 }

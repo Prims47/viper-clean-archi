@@ -10,15 +10,17 @@ import Foundation
 
 /// sourcery: AutoMockable
 public protocol HomeModuleFactoryInput: class {
-    func interactor() -> HomeInteractorInput
+    func interactor(bookingRepository: BookingRepositoryProtocol) -> HomeInteractorInput
 }
 
 public final class HomeModuleFactory: HomeModuleFactoryInput {
-    
+
+    // MARK: - Lifecycle
+
     public init() {}
 
-    public func interactor() -> HomeInteractorInput {
-        let interactor = HomeInteractor()
+    public func interactor(bookingRepository: BookingRepositoryProtocol) -> HomeInteractorInput {
+        let interactor = HomeInteractor(bookingRepository: bookingRepository)
 
         return interactor
     }

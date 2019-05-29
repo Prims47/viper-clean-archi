@@ -62,11 +62,11 @@ class HomeViewController: UIViewController {
 // MARK: - HomePresenterOutput
 
 extension HomeViewController: HomePresenterOutput {
-    func displayHotelList(hotels: [HotelViewModelProtocol]) {
+    func displayBooking(_ booking: HotelViewModelProtocol) {
         //TODO
     }
 
-    func displayErrorFetchHotelList(with message: String) {
+    func displayErrorFetch(with message: String) {
         //TODO
     }
 }
@@ -74,6 +74,10 @@ extension HomeViewController: HomePresenterOutput {
 // MARK: - SearchEngineWidgetDelegate
 extension HomeViewController: SearchEngineWidgetDelegate {
     func searchEngineWidgetDidSelectDestination() {
+        //TODO
+    }
+
+    func searchEngineWidgetDidSelectCalendar() {
         //TODO
     }
 }

@@ -32,7 +32,9 @@ class SearchEngineWidgetView: UIView, NibLoadable {
     override func draw(_ rect: CGRect) {
         super.draw(rect)
         self.setupUI()
+
         searchDestinationStackView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(didTapSearchDestinationButton)))
+        calendarView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(didTapCalendarButton)))
     }
 
     private func setupUI() {
@@ -42,6 +44,10 @@ class SearchEngineWidgetView: UIView, NibLoadable {
 
     @objc private func didTapSearchDestinationButton() {
         delegate?.searchEngineWidgetDidSelectDestination()
+    }
+
+    @objc private func didTapCalendarButton() {
+        delegate?.searchEngineWidgetDidSelectCalendar()
     }
 }
 

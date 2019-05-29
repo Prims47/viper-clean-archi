@@ -20,8 +20,8 @@ extension SplashScreenRouter: SplashScreenRouterInput {
         let homeViewController = StoryboardScene.Home.initialScene.instantiate()
         homeViewController.searchEngineWidgetModuleFactory = SearchEngineWidgetModuleFactory()
 
-        let moduleFactory = HomeModuleFactory()
-        let interactor = moduleFactory.interactor()
+        let moduleFactory = BusinessLogic.HomeModuleFactory()
+        let interactor = moduleFactory.interactor(bookingRepository: BookingDataProxy())
 
         let router = HomeRouter()
         let presenter = HomePresenter(interactor: interactor, router: router)
